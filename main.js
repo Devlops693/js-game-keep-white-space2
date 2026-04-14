@@ -914,3 +914,10 @@ function touchMove(e) {
 function touchEnd() {
   player.updateTargetRadian(null);
 }
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    Vec,
+    GameStatus,
+  };
+}
