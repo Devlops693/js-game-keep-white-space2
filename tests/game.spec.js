@@ -10,7 +10,7 @@ test('le conteneur du jeu existe', async ({ page }) => {
   await expect(page.locator('#gamepanel')).toBeVisible();
 });
 
-test('un canvas est affiché pour le jeu', async ({ page }) => {
+test('le jeu crée ses canvases', async ({ page }) => {
   await page.goto('/');
-  await expect(page.locator('canvas')).toHaveCount(1);
+  await expect(page.locator('canvas')).toHaveCount(5);
 });
