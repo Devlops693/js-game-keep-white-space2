@@ -1,6 +1,6 @@
 const { GameStatus } = require('../main.js');
 
-// Mock pour le context (pas besoin d'un vrai canvas pour ce test)
+
 const mockCtx = {
   clearRect: () => {},
   fillStyle: '',

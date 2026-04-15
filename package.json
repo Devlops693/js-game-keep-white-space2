@@ -7,8 +7,8 @@
     "test": "jest --coverage",
     "test:unit": "jest",
     "test:functional": "playwright test",
-    "lint": "eslint *.js --config .eslintrc.json",
-    "lint:fix": "eslint *.js --config .eslintrc.json --fix"
+    "lint": "eslint *.js --config .eslint.config.js",
+    "lint:fix": "eslint *.js --config .eslint.config.js --fix"
   },
   "repository": {
     "type": "git",
