@@ -4,12 +4,12 @@
   "description": "Keep White Space - Retro Game with CI/CD",
   "main": "main.js",
   "scripts": {
-    "test": "jest --coverage",
-    "test:unit": "jest",
-    "test:functional": "playwright test",
-    "lint": "eslint *.js --config .eslint.config.js",
-    "lint:fix": "eslint *.js --config .eslint.config.js --fix"
-  },
+  "test": "jest --coverage",
+  "test:unit": "jest",
+  "test:functional": "playwright test",
+  "lint": "eslint .",
+  "lint:fix": "eslint . --fix"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/euphrasy07/js-game-keep-white-space.git"
