@@ -1,5 +1,6 @@
-import { FlatCompat } from '@eslint/eslintrc';
+import globals from 'globals';
 import js from '@eslint/js';
+import { FlatCompat } from '@eslint/eslintrc';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -18,6 +19,10 @@ export default [
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'module',
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
     },
     rules: {
       'require-jsdoc': 'off',
