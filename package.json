@@ -1,6 +1,7 @@
 {
   "name": "js-game-keep-white-space",
   "version": "1.0.0",
+  "type": "module",
   "description": "Keep White Space - Retro Game with CI/CD",
   "main": "main.js",
   "scripts": {

@@ -25,7 +25,6 @@ export default [
       },
     },
     rules: {
-      'require-jsdoc': 'off',
       'max-len': ['error', { code: 120 }],
     },
   },
