@@ -1,0 +1,27 @@
+name: Publish Docker image on Release
+ 
+on:
+  release:
+    types: [published]
+ 
+permissions:
+  contents: read
+  packages: write
+ 
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+ 
+      - name: Log in to GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+ 
+      - name: Build image
+        run: docker build -t ghcr.io/${{ github.repository_owner }}/keep-white-space:${{ github.event.release.tag_name }} .
+ 
+      - name: Push image
+        run: docker push ghcr.io/${{ github.repository_owner }}/keep-white-space:${{ github.event.release.tag_name }}
+ 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1776152867247" clover="3.2.0">
-  <project timestamp="1776152867247" name="All files">
+<coverage generated="1776425816696" clover="3.2.0">
+  <project timestamp="1776425816696" name="All files">
     <metrics statements="471" coveredstatements="48" conditionals="122" coveredconditionals="5" methods="102" coveredmethods="8" elements="695" coveredelements="61" complexity="0" loc="471" ncloc="471" packages="1" files="1" classes="1"/>
-    <file name="main.js" path="/home/euphrasy-meyo/Documents/js-game-keep-white-space/main.js">
+    <file name="main.js" path="/Users/bouchra/Documents/js-game-keep-white-space2/main.js">
       <metrics statements="471" coveredstatements="48" conditionals="122" coveredconditionals="5" methods="102" coveredmethods="8"/>
       <line num="1" count="2" type="stmt"/>
       <line num="2" count="2" type="stmt"/>
